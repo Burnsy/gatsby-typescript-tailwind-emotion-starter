@@ -1,4 +1,4 @@
-# Gatsby Tailwind Emotion Starter
+# Gatsby Typesript Tailwind Emotion Starter
 
 
 ## Quick Start
