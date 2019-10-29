@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import { Container, StyledLink, Title } from './header.css'
+import { Container, StyledLink, Title } from './header.css';
 
 interface HeaderProps {
-	siteTitle: string
+	siteTitle: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
@@ -12,6 +12,6 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
 			<Title>{siteTitle}</Title>
 		</StyledLink>
 	</Container>
-)
+);
 
-export default Header
+export default Header;
