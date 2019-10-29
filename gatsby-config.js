@@ -3,7 +3,7 @@ module.exports = {
     title: 'Gatsby Tailwind Emotion Starter',
   },
   plugins: [
-    `gatsby-plugin-typescript`,
+    'gatsby-plugin-typescript',
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     {

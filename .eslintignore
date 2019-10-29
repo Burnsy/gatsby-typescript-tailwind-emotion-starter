@@ -1,0 +1,14 @@
+# Project dependencies
+.cache
+babel-plugin-macros.config.js
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+gatsby-ssr.js
+node_modules
+tailwind.config.js
+yarn-error.log
+
+# Build directory
+/public
+.DS_Store

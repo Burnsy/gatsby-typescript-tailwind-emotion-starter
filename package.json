@@ -14,7 +14,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
+    "format": "prettier --write 'src/**/*.{tsx,ts,js,jsx}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -37,11 +37,14 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.13",
-    "babel-plugin-macros": "^2.4.2",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "prettier": "^1.14.2",
-    "tailwind.macro": "^0.5.10"
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "babel-plugin-macros": "^2.6.1",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-better-styled-components": "^1.1.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.18.2"
   }
 }
