@@ -14,9 +14,21 @@
 	"scripts": {
 		"build": "gatsby build",
 		"dev": "gatsby develop",
-		"lint": "eslint 'src/**/*.{tsx,ts,js,jsx}'",
 		"format": "prettier --write 'src/**/*.{tsx,ts,js,jsx}'",
+		"lint": "eslint 'src/**/*.{tsx,ts,js,jsx}'",
 		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.tsx": [
+			"npm run format",
+			"npm run lint",
+			"git add"
+		]
 	},
 	"dependencies": {
 		"@emotion/core": "^10.0.22",
@@ -49,17 +61,5 @@
 		"husky": "^3.0.9",
 		"prettier": "^1.18.2",
 		"typescript": "^3.6.4"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.tsx": [
-			"npm run format",
-			"npm run lint",
-			"git add"
-		]
 	}
 }
