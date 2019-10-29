@@ -47,10 +47,10 @@ const Container = styled.div`
 // or this
 const Text = styled.p(tw`bg-black text-white`);
 
-const Home = () => (
+const Home: FC = () => (
   <Container>
     <Text>
-    I am Text component made with Tailwind CSS + EmotionJS
+    I am Text component made with Tailwind CSS + EmotionJS + Typescript
     </Text>
   </Container>
 )
